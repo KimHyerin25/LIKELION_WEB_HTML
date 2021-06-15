@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseover="this.style.backgroundColor='orange'">
+        마우스가 올라가면 여기 색이 변경됩니다
+    </div>
+    <div onmouseleave="this.style.backgroundColor='green'">
+        마우스가 지나가면 여기 색이 변경됩니다.
+    </div>
+    <p onmousewheel="this.style.backgroundColor='lightpink'">
+        마우스휠을 움직이면 색이 변경됩니다.
+    </p>
+    <div id='div1' onmouseover="this.style.color='orange'" onclick="myFnc()">
+        여기가 색깔이 변경됩니다.
+    </div>
+    <script>
+        function myFnc() {
+            document.getElementById('div1').innerHTML="클릭되었습니다."
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<body>
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<body>
+
+    <div id="div_1"
+     onmouseover="this.style.backgroundColor='red'">
+         마우스 오버
+    </div>
+    <div id="div_1"
+     onmouseleave="this.style.backgroundColor='light green'">
+         마우스 리브
+    </div>
+    <div id="div_1"
+     onclick="this.style.backgroundColor='powderblue'; Func_1();" style="width:50%; color:white;
+     border: 2px solid black">
+        온클릭
+    </div>
+<script>
+    function myFnc() {
+    document.getElementById('div1').innerHTML = "클릭되었습니다."
+    }
+</script>
+</body>
+</head>
+
+<p id="p1"></p>
+</html>
